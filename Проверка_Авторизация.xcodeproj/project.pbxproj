@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F289AC1D2D108599001BFF13 /* VKID in Frameworks */ = {isa = PBXBuildFile; productRef = F289AC1C2D108599001BFF13 /* VKID */; };
+		F289AC1F2D108599001BFF13 /* VKIDCore in Frameworks */ = {isa = PBXBuildFile; productRef = F289AC1E2D108599001BFF13 /* VKIDCore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F289AC032D108581001BFF13 /* Проверка_Авторизация.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Проверка_Авторизация.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F289AC1D2D108599001BFF13 /* VKID in Frameworks */,
+				F289AC1F2D108599001BFF13 /* VKIDCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,8 @@
 			);
 			name = "Проверка_Авторизация";
 			packageProductDependencies = (
+				F289AC1C2D108599001BFF13 /* VKID */,
+				F289AC1E2D108599001BFF13 /* VKIDCore */,
 			);
 			productName = "Проверка_Авторизация";
 			productReference = F289AC032D108581001BFF13 /* Проверка_Авторизация.app */;
@@ -107,6 +116,9 @@
 			);
 			mainGroup = F289ABFA2D108581001BFF13;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F289AC1B2D108599001BFF13 /* XCRemoteSwiftPackageReference "vkid-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F289AC042D108581001BFF13 /* Products */;
 			projectDirPath = "";
@@ -149,7 +161,6 @@
 				INFOPLIST_FILE = "Проверка_Авторизация/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -176,7 +187,6 @@
 				INFOPLIST_FILE = "Проверка_Авторизация/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,6 +343,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F289AC1B2D108599001BFF13 /* XCRemoteSwiftPackageReference "vkid-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/VKCOM/vkid-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F289AC1C2D108599001BFF13 /* VKID */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F289AC1B2D108599001BFF13 /* XCRemoteSwiftPackageReference "vkid-ios-sdk" */;
+			productName = VKID;
+		};
+		F289AC1E2D108599001BFF13 /* VKIDCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F289AC1B2D108599001BFF13 /* XCRemoteSwiftPackageReference "vkid-ios-sdk" */;
+			productName = VKIDCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F289ABFB2D108581001BFF13 /* Project object */;
 }
